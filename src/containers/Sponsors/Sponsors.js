@@ -1,3 +1,5 @@
+import { render } from "react-dom";
+
 function Sponsors() {
   return (
     <>
@@ -6,4 +8,5 @@ function Sponsors() {
   );
 }
 
-export default Sponsors;
+// export default Sponsors;
+render(<Sponsors />, document.getElementById("root"));

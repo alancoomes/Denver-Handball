@@ -7,6 +7,7 @@ import Contact from "./Contact/Contact";
 import Home from "./Home/Home";
 import Media from "./Media/Media";
 import Sponsors from "./Sponsors/Sponsors";
+// eslint-disable-next-line import/default
 import WhatIsHandball from "./WhatIsHandball/WhatIsHandball";
 
 const App = () => {
