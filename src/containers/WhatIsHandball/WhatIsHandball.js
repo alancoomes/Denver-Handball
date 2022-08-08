@@ -1,12 +1,9 @@
 import YouTubeEmbed from "../../components/YouTubeEmbed/YouTubeEmbed";
-import { render } from "react-dom";
 
 const WhatIsHandball = () => {
-  let something = "this";
-  debugger;
   return (
     <>
-      <h1>Huh? Whats Handball?${something}</h1>
+      <h1>Huh? Whats Handball?</h1>
       <p>
         Handball brings together a combination of soccer, basketball and
         waterpolo minus the water. The game is contested by two teams of seven
@@ -24,5 +21,5 @@ const WhatIsHandball = () => {
   );
 };
 
-// export default WhatIsHandball;
-render(<WhatIsHandball />, document.getElementById("root"));
+export default WhatIsHandball;
+// render(<WhatIsHandball />, document.getElementById("root"));
