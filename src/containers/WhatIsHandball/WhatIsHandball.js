@@ -1,4 +1,4 @@
-function WhatIsHandball(props) {
+function WhatIsHandball() {
   return (
     <>
       <h1>What Is Handball?</h1>

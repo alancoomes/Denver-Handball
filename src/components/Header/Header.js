@@ -1,16 +1,28 @@
 import Logo from "../../elements/Logo/Logo";
-import NavLink from "../../elements/NavLink/NavLink";
+import NavLink from "react-router-dom";
 
 function Header() {
   return (
     <header>
-      <NavLink title="Home" link="/"></NavLink>
-      <NavLink title="What Is Handball?" link="/handball"></NavLink>
-      <NavLink title="About Us" link="/about"></NavLink>
-      <Logo link="/"></Logo>
-      <NavLink title="Media" link="/media"></NavLink>
-      <NavLink title="Contact" link="/contact"></NavLink>
-      <NavLink title="Sponsors" link="/sponsors"></NavLink>
+      <NavLink className="header-navlink" to="/">
+        <div>Home</div>
+      </NavLink>
+      <NavLink className="header-navlink" to="/handball">
+        <div>what Is Handball?</div>
+      </NavLink>
+      <NavLink className="header-navlink" to="/about">
+        <div>About Us</div>
+      </NavLink>
+      <Logo to="/"></Logo>
+      <NavLink className="header-navlink" to="/media">
+        <div>Media</div>
+      </NavLink>
+      <NavLink className="header-navlink" to="/contact">
+        <div>Contact</div>
+      </NavLink>
+      <NavLink className="header-navlink" to="/sponsors">
+        <div>Sponsors</div>
+      </NavLink>
     </header>
   );
 }

@@ -1,5 +1,6 @@
+import { StrictMode } from "react";
 import { render } from "react-dom";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from "../components/Header/Header";
 import About from "./About/About";
 import Contact from "./Contact/Contact";
@@ -10,8 +11,8 @@ import WhatIsHandball from "./WhatIsHandball/WhatIsHandball";
 
 const App = () => {
   return (
-    <>
-      <Router>
+    <StrictMode>
+      <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />}></Route>
           <Route path="/handball" element={<WhatIsHandball />}></Route>
@@ -21,9 +22,9 @@ const App = () => {
           <Route path="/sponsors" element={<Sponsors />}></Route>
         </Routes>
         <Header></Header>
-      </Router>
-    </>
+      </BrowserRouter>
+    </StrictMode>
   );
 };
 
-render(<App />, document.getElementsById("root"));
+render(<App />, document.getElementById("root"));

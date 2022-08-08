@@ -1,11 +1,13 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
-function NavLink(props) {
+function NavigationLink(props) {
   return (
     <div>
-      <Link to={props.link}>{props.title}</Link>
+      <NavLink className={props.name} to={props.link}>
+        {props.title}
+      </NavLink>
     </div>
   );
 }
 
-export default NavLink;
+export default NavigationLink;
